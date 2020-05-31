@@ -26409,7 +26409,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C7" library="SmartPrj" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PGM1" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="PROGRAM" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="V2" library="Adafruit111" deviceset="VBUS" device=""/>
 <part name="RST_SIM" library="ESP8266_Sparkfun" deviceset="SPARKFUN-PASSIVES_JUMPER-PTH-2-NC" device=""/>
@@ -27379,7 +27379,7 @@ LTE Idle: ~11mA</text>
 <instance part="GND52" gate="1" x="-76.2" y="0">
 <attribute name="VALUE" x="-78.74" y="-2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="PGM1" gate="A" x="-93.98" y="-63.5" rot="R180">
+<instance part="PROGRAM" gate="A" x="-93.98" y="-63.5" rot="R180">
 <attribute name="NAME" x="-87.63" y="-74.295" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-87.63" y="-53.34" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -27570,7 +27570,7 @@ LTE Idle: ~11mA</text>
 <wire x1="-76.2" y1="5.08" x2="-76.2" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PGM1" gate="A" pin="1"/>
+<pinref part="PROGRAM" gate="A" pin="1"/>
 <wire x1="-91.44" y1="-71.12" x2="-83.82" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-83.82" y1="-71.12" x2="-83.82" y2="-76.2" width="0.1524" layer="91"/>
@@ -27662,7 +27662,7 @@ LTE Idle: ~11mA</text>
 <label x="38.1" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PGM1" gate="A" pin="5"/>
+<pinref part="PROGRAM" gate="A" pin="5"/>
 <wire x1="-91.44" y1="-60.96" x2="-78.74" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-78.74" y="-60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -27693,7 +27693,7 @@ LTE Idle: ~11mA</text>
 <wire x1="33.02" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PGM1" gate="A" pin="6"/>
+<pinref part="PROGRAM" gate="A" pin="6"/>
 <wire x1="-91.44" y1="-58.42" x2="-78.74" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-78.74" y="-58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -27798,7 +27798,7 @@ LTE Idle: ~11mA</text>
 <label x="-45.72" y="-59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PGM1" gate="A" pin="4"/>
+<pinref part="PROGRAM" gate="A" pin="4"/>
 <wire x1="-91.44" y1="-63.5" x2="-78.74" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-78.74" y="-63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -27828,7 +27828,7 @@ LTE Idle: ~11mA</text>
 <label x="-45.72" y="-81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PGM1" gate="A" pin="3"/>
+<pinref part="PROGRAM" gate="A" pin="3"/>
 <wire x1="-91.44" y1="-66.04" x2="-78.74" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-78.74" y="-66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -27896,7 +27896,7 @@ LTE Idle: ~11mA</text>
 </net>
 <net name="VBUS" class="3">
 <segment>
-<pinref part="PGM1" gate="A" pin="2"/>
+<pinref part="PROGRAM" gate="A" pin="2"/>
 <wire x1="-91.44" y1="-68.58" x2="-83.82" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-68.58" x2="-83.82" y2="-52.07" width="0.1524" layer="91"/>
 <pinref part="V2" gate="G$1" pin="VBUS"/>
