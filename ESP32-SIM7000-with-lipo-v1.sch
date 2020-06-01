@@ -400,12 +400,6 @@
 <text x="2.54" y="25.4" size="3.81" layer="94" font="vector" ratio="16">Botletics LLC</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
 </symbol>
-<symbol name="VIN" urn="urn:adsk.eagle:symbol:502098/1" library_version="3" library_locally_modified="yes">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1.8V" urn="urn:adsk.eagle:component:502133/1" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
@@ -426,19 +420,6 @@ Standard 11x14 US Ledger frame</description>
 <gates>
 <gate name="G$1" symbol="FRAME_LEDGER" x="0" y="0"/>
 <gate name="G$2" symbol="DOCFIELD" x="330.2" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VIN" urn="urn:adsk.eagle:component:502118/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
-<description>Vin supply symbol</description>
-<gates>
-<gate name="G$1" symbol="VIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -26377,8 +26358,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="FRAME1" library="TimWoo-Aesthetics" library_urn="urn:adsk.eagle:library:502097" deviceset="SCHEMATIC_FRAME" device=""/>
 <part name="Q1" library="TimWoo-MOSFETs" library_urn="urn:adsk.eagle:library:501962" deviceset="MOSFET-N" device="GENERIC" package3d_urn="urn:adsk.eagle:package:501973/2" value="BSS138L"/>
 <part name="Q2" library="TimWoo-MOSFETs" library_urn="urn:adsk.eagle:library:501962" deviceset="MOSFET-N" device="GENERIC" package3d_urn="urn:adsk.eagle:package:501973/2" value="BSS138L"/>
-<part name="SUPPLY5" library="TimWoo-Aesthetics" library_urn="urn:adsk.eagle:library:502097" deviceset="VIN" device=""/>
-<part name="SUPPLY14" library="TimWoo-Aesthetics" library_urn="urn:adsk.eagle:library:502097" deviceset="VIN" device=""/>
 <part name="JP3" library="TimWoo-Connectors" library_urn="urn:adsk.eagle:library:1036184" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:1036528/1"/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -26476,6 +26455,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="$H2" library="Adafruit SIM808 Breakout" deviceset="MOUNTINGHOLE" device="3.0THIN"/>
 <part name="$H3" library="Adafruit SIM808 Breakout" deviceset="MOUNTINGHOLE" device="3.0THIN"/>
 <part name="$H4" library="Adafruit SIM808 Breakout" deviceset="MOUNTINGHOLE" device="3.0THIN"/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26615,12 +26596,6 @@ LTE Idle: ~11mA</text>
 <attribute name="NAME" x="210.82" y="33.655" size="1.27" layer="95"/>
 <attribute name="VALUE" x="210.82" y="31.75" size="1.27" layer="96"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="152.4" y="68.58" smashed="yes">
-<attribute name="VALUE" x="151.384" y="72.136" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY14" gate="G$1" x="208.28" y="63.5" smashed="yes">
-<attribute name="VALUE" x="207.264" y="67.056" size="1.778" layer="96"/>
-</instance>
 <instance part="JP3" gate="G$1" x="160.02" y="63.5" smashed="yes">
 <attribute name="NAME" x="157.48" y="66.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.48" y="60.96" size="1.778" layer="96" align="top-left"/>
@@ -26706,6 +26681,12 @@ LTE Idle: ~11mA</text>
 <instance part="$H2" gate="G$1" x="95.25" y="71.12"/>
 <instance part="$H3" gate="G$1" x="96.52" y="35.56"/>
 <instance part="$H4" gate="G$1" x="31.75" y="35.56"/>
+<instance part="SUPPLY5" gate="P" x="152.4" y="71.12">
+<attribute name="VALUE" x="150.495" y="74.295" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY8" gate="P" x="208.28" y="71.12">
+<attribute name="VALUE" x="206.375" y="74.295" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26885,19 +26866,6 @@ LTE Idle: ~11mA</text>
 <wire x1="194.31" y1="138.43" x2="194.31" y2="133.35" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="138.43" x2="194.31" y2="138.43" width="0.1524" layer="91"/>
 <junction x="194.31" y="138.43"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="SUPPLY14" gate="G$1" pin="VIN"/>
-<wire x1="208.28" y1="63.5" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
-<wire x1="152.4" y1="63.5" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -27253,6 +27221,17 @@ LTE Idle: ~11mA</text>
 <wire x1="330.2" y1="226.06" x2="327.66" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="231.14" x2="327.66" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="P" pin="+4.1V"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="P" pin="+4.1V"/>
+<wire x1="152.4" y1="63.5" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="P" pin="+4.1V"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="208.28" y1="68.58" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -27922,12 +27901,22 @@ LTE Idle: ~11mA</text>
 <wire x1="91.44" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <label x="83.82" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="IO18"/>
+<wire x1="33.02" y1="-2.54" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
+<label x="38.1" y="-2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="UC_PWRK" class="0">
 <segment>
 <pinref part="PWR_SIM" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <label x="83.82" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="IO19"/>
+<wire x1="33.02" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
+<label x="38.1" y="0" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SIM7000_RESET_MCU" class="0">
