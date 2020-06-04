@@ -41,6 +41,7 @@ original-files/
 *.b#*
 *.info
 *.eps
+*.scr
 
 # file locks introduced since 7.x
 
