@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -27524,6 +27524,440 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="discrete">
+<packages>
+<package name="ELECTRO_SMD_A">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package A&lt;/b&gt;</description>
+<wire x1="-2.032" y1="2.032" x2="1.27" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="2.032" x2="2.032" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="1.27" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-2.032" x2="-2.032" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="1.0033" x2="1.524" y2="1.0033" width="0.127" layer="21" curve="-110.076539"/>
+<wire x1="1.524" y1="-1.0033" x2="-1.524" y2="-1.0033" width="0.127" layer="21" curve="-110.076539"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-2.032" x2="-2.032" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="2.032" y1="1.27" x2="2.032" y2="1.016" width="0.2032" layer="21"/>
+<smd name="-" x="-1.905" y="0" dx="2.032" dy="1.524" layer="1"/>
+<smd name="+" x="1.778" y="0" dx="2.032" dy="1.524" layer="1"/>
+<text x="0.381" y="-1.524" size="0.8128" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="1.27" y="-1.524" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-3.048" y1="-2.159" x2="2.921" y2="2.159" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_B">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package B&lt;/b&gt;</description>
+<wire x1="-2.54" y1="2.54" x2="1.778" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="2.54" x2="2.54" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="1.778" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-2.1336" y1="1.0668" x2="2.1336" y2="1.0668" width="0.2032" layer="21" curve="-129.055799"/>
+<wire x1="2.1336" y1="-1.0668" x2="-2.1336" y2="-1.0668" width="0.2032" layer="21" curve="-129.055799"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="2.54" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="1.778" x2="2.54" y2="1.143" width="0.2032" layer="21"/>
+<smd name="-" x="-2.032" y="0" dx="2.54" dy="1.524" layer="1"/>
+<smd name="+" x="2.032" y="0" dx="2.54" dy="1.524" layer="1"/>
+<text x="-1.27" y="1.27" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.429" y1="-2.667" x2="3.429" y2="2.667" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_C">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package B&lt;/b&gt;</description>
+<wire x1="-3.175" y1="3.175" x2="2.413" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="2.413" y1="3.175" x2="3.175" y2="2.413" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-2.413" x2="2.413" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="2.413" y1="-3.175" x2="-3.175" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-2.7432" y1="1.1176" x2="2.7432" y2="1.1176" width="0.2032" layer="21" curve="-135.667308"/>
+<wire x1="2.7432" y1="-1.1176" x2="-2.7432" y2="-1.1176" width="0.2032" layer="21" curve="-135.667308"/>
+<wire x1="-3.175" y1="3.175" x2="-3.175" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-2.413" x2="3.175" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="2.413" x2="3.175" y2="1.143" width="0.2032" layer="21"/>
+<smd name="-" x="-2.667" y="0" dx="3.048" dy="1.651" layer="1"/>
+<smd name="+" x="2.667" y="0" dx="3.048" dy="1.651" layer="1"/>
+<text x="-1.905" y="1.27" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.318" y1="-3.302" x2="4.318" y2="3.302" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_E">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package E&lt;/b&gt;</description>
+<wire x1="-4.064" y1="4.064" x2="2.921" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="2.921" y1="4.064" x2="4.05" y2="2.95" width="0.2032" layer="21"/>
+<wire x1="2.921" y1="-4.064" x2="-4.064" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="4.05" y1="-2.95" x2="2.921" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="-3.6576" y1="1.2192" x2="3.6576" y2="1.2192" width="0.2032" layer="21" curve="-143.130102"/>
+<wire x1="3.6576" y1="-1.2192" x2="-3.6576" y2="-1.2192" width="0.2032" layer="21" curve="-143.130102"/>
+<wire x1="-4.064" y1="4.064" x2="-4.064" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-4.064" y1="-4.064" x2="-4.064" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="-2.921" x2="4.064" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="2.921" x2="4.064" y2="1.27" width="0.2032" layer="21"/>
+<smd name="-" x="-3.429" y="0" dx="3.81" dy="1.905" layer="1"/>
+<smd name="+" x="3.429" y="0" dx="3.81" dy="1.905" layer="1"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.461" y1="-4.191" x2="5.461" y2="4.191" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_F">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package F&lt;/b&gt;</description>
+<wire x1="-5.08" y1="5.08" x2="3.937" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="3.937" y1="5.08" x2="5.08" y2="3.937" width="0.2032" layer="21"/>
+<wire x1="3.937" y1="-5.08" x2="-5.08" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-3.937" x2="3.937" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-4.6736" y1="1.2192" x2="4.6736" y2="1.2192" width="0.2032" layer="21" curve="-152.514405"/>
+<wire x1="4.6736" y1="-1.2192" x2="-4.6736" y2="-1.2192" width="0.2032" layer="21" curve="-152.514405"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-3.937" x2="5.08" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="1.27" width="0.2032" layer="21"/>
+<smd name="-" x="-4.318" y="0" dx="4.064" dy="1.905" layer="1"/>
+<smd name="+" x="4.318" y="0" dx="4.064" dy="1.905" layer="1"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.477" y1="-5.207" x2="6.477" y2="5.207" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_G">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package G&lt;/b&gt;</description>
+<wire x1="-5.08" y1="5.08" x2="2.794" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="5.08" x2="5.08" y2="2.794" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-2.794" x2="2.794" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="-5.08" x2="-5.08" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-1" x2="4.85" y2="-1" width="0.2032" layer="21" curve="156.699401"/>
+<wire x1="-4.85" y1="1" x2="4.85" y2="1" width="0.2032" layer="21" curve="-156.699401"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.794" x2="5.08" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-2.794" x2="5.08" y2="-1.016" width="0.2032" layer="21"/>
+<smd name="-" x="-4.191" y="0" dx="3.81" dy="1.524" layer="1"/>
+<smd name="+" x="4.191" y="0" dx="3.81" dy="1.524" layer="1"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.82" y="-2.548" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.223" y1="-5.207" x2="6.223" y2="5.207" layer="39"/>
+</package>
+<package name="ELECTRO_SMD_D">
+<description>&lt;b&gt;Aluminium Electrolytic Capacitor Package D&lt;/b&gt;</description>
+<wire x1="-3.175" y1="3.175" x2="1.524" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="1.524" y1="3.175" x2="3.175" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.524" x2="1.524" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="1.524" y1="-3.175" x2="-3.175" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="1.016" x2="-3.175" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.524" x2="3.175" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.016" x2="3.175" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-2.696" y1="0.95" x2="2.569" y2="0.95" width="0.2032" layer="21" curve="-144.218698"/>
+<wire x1="2.696" y1="-0.95" x2="-2.569" y2="-0.95" width="0.2032" layer="21" curve="-144.218698"/>
+<smd name="-" x="-2.667" y="0" dx="2.54" dy="1.397" layer="1"/>
+<smd name="+" x="2.667" y="0" dx="2.54" dy="1.397" layer="1"/>
+<text x="-1.905" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.064" y1="-3.302" x2="4.064" y2="3.302" layer="39"/>
+</package>
+<package name="AVX_A">
+<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="0" x2="0.0635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.1905" y1="-0.254" x2="-0.1905" y2="0.254" width="0.127" layer="21"/>
+<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
+<text x="-1.6" y="0.975" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1.6" y="-2" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.159" y1="-0.889" x2="2.159" y2="0.889" layer="39"/>
+</package>
+<package name="AVX_B">
+<wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="1.397" x2="2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="-1.397" x2="-2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="-2.2225" y1="-1.397" x2="-2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="-0.6985" y1="0" x2="-0.1905" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="-0.254" x2="-0.4445" y2="0.254" width="0.127" layer="21"/>
+<smd name="+" x="-1.4605" y="0" dx="1.143" dy="2.286" layer="1"/>
+<smd name="-" x="1.4605" y="0" dx="1.143" dy="2.286" layer="1" rot="R180"/>
+<text x="-1.905" y="0" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.2225" y1="-1.397" x2="2.2225" y2="1.397" layer="39"/>
+</package>
+<package name="AVX_C">
+<wire x1="-3.7465" y1="1.651" x2="3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="1.651" x2="3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="-1.651" x2="-3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-3.7465" y1="-1.651" x2="-3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<smd name="+" x="-2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="-" x="2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<text x="-0.635" y="0" size="1.27" layer="25" ratio="10">&gt;name</text>
+<text x="-3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;value</text>
+<rectangle x1="-3.7465" y1="-1.651" x2="3.7465" y2="1.651" layer="39"/>
+</package>
+<package name="AVX_D">
+<wire x1="-4.6355" y1="2.159" x2="4.6355" y2="2.159" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="2.159" x2="4.6355" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="-2.159" x2="-4.6355" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-4.6355" y1="-2.159" x2="-4.6355" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<smd name="+" x="-3.175" y="0" dx="2.54" dy="3.048" layer="1"/>
+<smd name="-" x="3.175" y="0" dx="2.54" dy="3.175" layer="1" rot="R180"/>
+<text x="-1.27" y="0.635" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.6355" y1="-2.159" x2="4.6355" y2="2.159" layer="39"/>
+</package>
+<package name="AVX_E">
+<wire x1="-4.6355" y1="2.159" x2="4.6355" y2="2.159" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="2.159" x2="4.6355" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="-2.159" x2="-4.6355" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-4.6355" y1="-2.159" x2="-4.6355" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<smd name="+" x="-3.175" y="0" dx="2.54" dy="3.048" layer="1"/>
+<smd name="-" x="3.175" y="0" dx="2.54" dy="3.048" layer="1" rot="R180"/>
+<text x="-1.27" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.6355" y1="-2.159" x2="4.6355" y2="2.159" layer="39"/>
+</package>
+<package name="AVX_V">
+<wire x1="-4.6355" y1="3.048" x2="4.6355" y2="3.048" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="3.048" x2="4.6355" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="4.6355" y1="-3.048" x2="-4.6355" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-4.6355" y1="-3.048" x2="-4.6355" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<smd name="+" x="-3.175" y="0" dx="2.54" dy="3.81" layer="1"/>
+<smd name="-" x="3.175" y="0" dx="2.54" dy="3.81" layer="1" rot="R180"/>
+<text x="-1.27" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.6355" y1="-3.048" x2="4.6355" y2="3.048" layer="39"/>
+</package>
+<package name="SUPER_CAP_R20">
+<description>Super Capacitor</description>
+<wire x1="-1.397" y1="0" x2="0.127" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-2.921" x2="2.54" y2="-1.905" width="0.127" layer="46"/>
+<wire x1="2.54" y1="-1.905" x2="2.286" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="2.54" y1="-1.905" x2="2.794" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-2.921" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.794" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.286" y2="-2.413" width="0.127" layer="46"/>
+<circle x="0" y="0" radius="10.25" width="0.127" layer="21"/>
+<pad name="+" x="-2.54" y="0" drill="0.889" diameter="1.651" shape="long" rot="R90"/>
+<pad name="-" x="2.54" y="0" drill="0.889" diameter="1.651" shape="long" rot="R90"/>
+<text x="-6.35" y="-3.81" size="0.6096" layer="46">2 Slot drills with copper</text>
+<text x="-5.08" y="5.08" size="1.27" layer="25" ratio="10">&gt;name</text>
+<text x="-5.08" y="3.175" size="1.27" layer="27" ratio="10">&gt;value</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="33" ratio="10">&gt;name</text>
+<text x="-5.08" y="-5.715" size="1.27" layer="33" ratio="10">&gt;value</text>
+<polygon width="0" layer="46">
+<vertex x="-2.0955" y="-0.8255" curve="-90"/>
+<vertex x="-2.54" y="-1.27" curve="-90"/>
+<vertex x="-2.9845" y="-0.8255"/>
+<vertex x="-2.9845" y="0.8255" curve="-89.974226"/>
+<vertex x="-2.54" y="1.27" curve="-90"/>
+<vertex x="-2.0955" y="0.8255"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="2.9845" y="-0.8255" curve="-90.025786"/>
+<vertex x="2.54" y="-1.27" curve="-90.025786"/>
+<vertex x="2.0955" y="-0.8255"/>
+<vertex x="2.0955" y="0.8255" curve="-90"/>
+<vertex x="2.54" y="1.27" curve="-90"/>
+<vertex x="2.9845" y="0.8255"/>
+</polygon>
+</package>
+<package name="SUPER_CAP_R13">
+<wire x1="-1.397" y1="0" x2="0.127" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-2.921" x2="2.54" y2="-1.905" width="0.127" layer="46"/>
+<wire x1="2.54" y1="-1.905" x2="2.286" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="2.54" y1="-1.905" x2="2.794" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-2.921" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.794" y2="-2.413" width="0.127" layer="46"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.286" y2="-2.413" width="0.127" layer="46"/>
+<circle x="0" y="0" radius="6.75" width="0.127" layer="21"/>
+<pad name="+" x="-2.54" y="0" drill="0.635" diameter="1.524" shape="long" rot="R90"/>
+<pad name="-" x="2.54" y="0" drill="0.635" diameter="1.524" shape="long" rot="R90"/>
+<text x="-6.35" y="-3.81" size="0.6096" layer="46">2 Slot drills with copper</text>
+<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;name</text>
+<text x="-2.54" y="1.905" size="1.27" layer="27" ratio="10">&gt;value</text>
+<text x="-2.54" y="-0.635" size="1.27" layer="33" ratio="10">&gt;name</text>
+<polygon width="0" layer="46">
+<vertex x="-2.2225" y="-0.6985" curve="-90"/>
+<vertex x="-2.54" y="-1.016" curve="-90"/>
+<vertex x="-2.8575" y="-0.6985"/>
+<vertex x="-2.8575" y="0.6985" curve="-89.96392"/>
+<vertex x="-2.54" y="1.016" curve="-90"/>
+<vertex x="-2.2225" y="0.6985"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="2.8575" y="-0.6985" curve="-90"/>
+<vertex x="2.54" y="-1.016" curve="-90"/>
+<vertex x="2.2225" y="-0.6985"/>
+<vertex x="2.2225" y="0.6985" curve="-89.96392"/>
+<vertex x="2.54" y="1.016" curve="-90"/>
+<vertex x="2.8575" y="0.6985"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="CAPACITOR">
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.508" layer="94" curve="47.924978"/>
+<wire x1="1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="0" size="1.27" layer="93" ratio="10">+</text>
+<text x="-3.81" y="1.27" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="-3.81" y="-1.27" size="1.27" layer="96" ratio="10">&gt;value</text>
+<text x="1.27" y="0" size="1.27" layer="93" ratio="10">-</text>
+<pin name="+" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
+<pin name="-" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="006-CAP*" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Electrolytic Capacitors,Tantalum Capacitors and Super Capacitors&lt;/b&gt;</description>
+<gates>
+<gate name="C" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_ELECTRO_A" package="ELECTRO_SMD_A">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_B" package="ELECTRO_SMD_B">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_C" package="ELECTRO_SMD_C">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_E" package="ELECTRO_SMD_E">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_F" package="ELECTRO_SMD_F">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_G" package="ELECTRO_SMD_G">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ELECTRO_D" package="ELECTRO_SMD_D">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_A" package="AVX_A">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_B" package="AVX_B">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_C" package="AVX_C">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_D" package="AVX_D">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_E" package="AVX_E">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AVX_V" package="AVX_V">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_UC20" package="SUPER_CAP_R20">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_UC13" package="SUPER_CAP_R13">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -27687,6 +28121,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C24" library="SparkFun-Capacitors" deviceset="22UF" device="-0805-6.3V-20%" value="22uF"/>
 <part name="GND47" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
+<part name="C8" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
+<part name="GND42" library="SparkFun" deviceset="GND" device=""/>
+<part name="C9" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
+<part name="C11" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27925,6 +28364,22 @@ LTE Idle: ~11mA</text>
 <instance part="SUPPLY9" gate="P" x="66.04" y="60.96">
 <attribute name="VALUE" x="64.135" y="64.135" size="1.778" layer="96"/>
 </instance>
+<instance part="C8" gate="C" x="101.6" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="99.06" y="48.26" size="1.016" layer="95" ratio="10"/>
+<attribute name="VALUE" x="99.06" y="44.45" size="1.016" layer="96" ratio="10"/>
+</instance>
+<instance part="GND42" gate="1" x="110.49" y="27.94" rot="MR0"/>
+<instance part="C9" gate="C" x="110.49" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="107.95" y="48.26" size="1.016" layer="95" ratio="10"/>
+<attribute name="VALUE" x="107.95" y="44.45" size="1.016" layer="96" ratio="10"/>
+</instance>
+<instance part="C11" gate="C" x="119.38" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="116.84" y="48.26" size="1.016" layer="95" ratio="10"/>
+<attribute name="VALUE" x="116.84" y="44.45" size="1.016" layer="96" ratio="10"/>
+</instance>
+<instance part="SUPPLY11" gate="P" x="110.49" y="62.23">
+<attribute name="VALUE" x="108.585" y="65.405" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28123,6 +28578,19 @@ LTE Idle: ~11mA</text>
 <pinref part="GND47" gate="1" pin="GND"/>
 <wire x1="67.31" y1="30.48" x2="67.31" y2="36.83" width="0.1524" layer="91"/>
 <junction x="67.31" y="36.83"/>
+</segment>
+<segment>
+<pinref part="C8" gate="C" pin="-"/>
+<wire x1="101.6" y1="43.18" x2="101.6" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="C11" gate="C" pin="-"/>
+<wire x1="101.6" y1="36.83" x2="110.49" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="36.83" x2="119.38" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="36.83" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C9" gate="C" pin="-"/>
+<wire x1="110.49" y1="43.18" x2="110.49" y2="36.83" width="0.1524" layer="91"/>
+<junction x="110.49" y="36.83"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="110.49" y1="30.48" x2="110.49" y2="36.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -28480,6 +28948,19 @@ LTE Idle: ~11mA</text>
 <wire x1="66.04" y1="58.42" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <junction x="66.04" y="53.34"/>
 <pinref part="SUPPLY9" gate="P" pin="+4.1V"/>
+</segment>
+<segment>
+<pinref part="C8" gate="C" pin="+"/>
+<wire x1="101.6" y1="50.8" x2="101.6" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="54.61" x2="110.49" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="54.61" x2="119.38" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="54.61" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C11" gate="C" pin="+"/>
+<pinref part="C9" gate="C" pin="+"/>
+<wire x1="110.49" y1="50.8" x2="110.49" y2="54.61" width="0.1524" layer="91"/>
+<junction x="110.49" y="54.61"/>
+<pinref part="SUPPLY11" gate="P" pin="+4.1V"/>
+<wire x1="110.49" y1="59.69" x2="110.49" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
