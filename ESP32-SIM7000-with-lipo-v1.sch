@@ -28121,10 +28121,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C24" library="SparkFun-Capacitors" deviceset="22UF" device="-0805-6.3V-20%" value="22uF"/>
 <part name="GND47" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
-<part name="C8" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
+<part name="C8" library="discrete" deviceset="006-CAP*" device="_AVX_C" value="220uF/6.3V"/>
 <part name="GND42" library="SparkFun" deviceset="GND" device=""/>
-<part name="C9" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
-<part name="C11" library="discrete" deviceset="006-CAP*" device="_AVX_B" value="220uF/6.3V"/>
+<part name="C9" library="discrete" deviceset="006-CAP*" device="_AVX_C" value="220uF/6.3V"/>
+<part name="C11" library="discrete" deviceset="006-CAP*" device="_AVX_C" value="220uF/6.3V"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+4.1V" device=""/>
 </parts>
 <sheets>
